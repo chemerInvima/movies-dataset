@@ -57,8 +57,8 @@ chart = (
     alt.Chart(df_chart)
     .mark_line()
     .encode(
-        x=alt.X("year:N", title="Year"),
-        y=alt.Y("gross:Q", title="Gross earnings ($)"),
+        x=alt.X("year:N", title="Año"),
+        y=alt.Y("gross:Q", title="Ganancias brutas ($)"),
         color="genre:N",
     )
     .properties(height=320)
