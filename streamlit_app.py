@@ -4,7 +4,7 @@ import streamlit as st
 
 # Show the page title and description.
 st.set_page_config(page_title="Chemer Movies dataset", page_icon="🎬")
-st.title("🎬 Movies dataset")
+st.title("🎬 Chemer Movies dataset")
 st.write(
     """
     This app visualizes data from [The Movie Database (TMDB)](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata).
@@ -46,7 +46,7 @@ df_reshaped = df_reshaped.sort_values(by="year", ascending=False)
 st.dataframe(
     df_reshaped,
     use_container_width=True,
-    column_config={"year": st.column_config.TextColumn("Year")},
+    column_config={"year": st.column_config.TextColumn("Año")},
 )
 
 # Display the data as an Altair chart using `st.altair_chart`.
